@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+
+    include ./header.pug
+
+    body
+    if page === 'about'
+        p Valor de msj en main.pug: #{msj}!
+        include ./about.pug
+        
+    else if page === 'contact'
+        p Página, #{msj}!
+
+    else if page === 'location'
+        p Página, #{msj}!
+
+    else
+        p Página no encontrada.
+        p.greetings#people msj = #{msj}
+
+include ./footer.pug

@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Basic Web Page
+    link(rel="stylesheet", href="/styles.css")
+  body
+    header
+      h1 Welcome to My Basic Web Page
+      nav
+        ul
+          li: a(href="#home") Home
+          li: a(href="#about") About
+          li: a(href="#contact") Contact
+    main
+      section#home
+        h2 Home Section
+        p This is the home section of the web page.
+      section#about
+        h2 About Section
+        p This is where you can learn more about the purpose of this page.
+      section#contact
+        h2 Contact Section
+        p For inquiries, please reach out via email or social media.
+    footer
+      p © 2024 Your Name. All rights reserved.
